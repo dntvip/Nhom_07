@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HotelManagement SYSTEM "hotel_management.dtd">
+<HotelManagement>
+
+    <!-- ===================== CUSTOMER ===================== -->
+    <Customers>
+        <Customer>
+            <CustomerID>1</CustomerID>
+            <FullName>Nguyễn Văn An</FullName>
+            <Phone>0905123456</Phone>
+            <Email>an.nguyen@example.com</Email>
+            <Address>123 Nguyễn Trãi, Q1, TP.HCM</Address>
+            <Nationality>Việt Nam</Nationality>
+            <PassportNumber>VN123456</PassportNumber>
+        </Customer>
+        <Customer>
+            <CustomerID>2</CustomerID>
+            <FullName>Lê Thị Mai</FullName>
+            <Phone>0916234567</Phone>
+            <Email>mai.le@example.com</Email>
+            <Address>45 Hai Bà Trưng, Hà Nội</Address>
+            <Nationality>Việt Nam</Nationality>
+            <PassportNumber>VN234567</PassportNumber>
+        </Customer>
+        <Customer>
+            <CustomerID>3</CustomerID>
+            <FullName>John Smith</FullName>
+            <Phone>0987654321</Phone>
+            <Email>john.smith@gmail.com</Email>
+            <Address>12 Baker Street, London</Address>
+            <Nationality>Anh</Nationality>
+            <PassportNumber>UK998877</PassportNumber>
+        </Customer>
+        <Customer>
+            <CustomerID>4</CustomerID>
+            <FullName>Trần Quốc Bảo</FullName>
+            <Phone>0909777888</Phone>
+            <Email>bao.tran@example.com</Email>
+            <Address>56 Lý Tự Trọng, Đà Nẵng</Address>
+            <Nationality>Việt Nam</Nationality>
+            <PassportNumber>VN345678</PassportNumber>
+        </Customer>
+        <Customer>
+            <CustomerID>5</CustomerID>
+            <FullName>Nguyễn Thị Hoa</FullName>
+            <Phone>0977555666</Phone>
+            <Email>hoa.nguyen@gmail.com</Email>
+            <Address>99 Phan Chu Trinh, Huế</Address>
+            <Nationality>Việt Nam</Nationality>
+            <PassportNumber>VN456789</PassportNumber>
+        </Customer>
+        <Customer>
+            <CustomerID>6</CustomerID>
+            <FullName>Phạm Minh Tuấn</FullName>
+            <Phone>0968999777</Phone>
+            <Email>tuan.pham@example.com</Email>
+            <Address>3 Nguyễn Văn Cừ, Cần Thơ</Address>
+            <Nationality>Việt Nam</Nationality>
+            <PassportNumber>VN567890</PassportNumber>
+        </Customer>
+        <Customer>
+            <CustomerID>7</CustomerID>
+            <FullName>Sarah Johnson</FullName>
+            <Phone>0841234567</Phone>
+            <Email>sarah.johnson@gmail.com</Email>
+            <Address>88 Orchard Road, Singapore</Address>
+            <Nationality>Singapore</Nationality>
+            <PassportNumber>SG876543</PassportNumber>
+        </Customer>
+    </Customers>
+
+    <!-- ===================== STAFF ===================== -->
+    <Staffs>
+        <Staff>
+            <StaffID>1</StaffID>
+            <FullName>Nguyễn Minh Quân</FullName>
+            <Position>Quản lý</Position>
+            <Phone>0908001001</Phone>
+            <Email>quan.nguyen@hotel.com</Email>
+            <Salary>25000000</Salary>
+        </Staff>
+        <Staff>
+            <StaffID>2</StaffID>
+            <FullName>Trần Thị Ngọc</FullName>
+            <Position>Lễ tân</Position>
+            <Phone>0908001002</Phone>
+            <Email>ngoc.tran@hotel.com</Email>
+            <Salary>12000000</Salary>
+        </Staff>
+        <Staff>
+            <StaffID>3</StaffID>
+            <FullName>Lê Văn Hùng</FullName>
+            <Position>Bảo vệ</Position>
+            <Phone>0908001003</Phone>
+            <Email>hung.le@hotel.com</Email>
+            <Salary>9000000</Salary>
+        </Staff>
+        <Staff>
+            <StaffID>4</StaffID>
+            <FullName>Phạm Thị Linh</FullName>
+            <Position>Dọn phòng</Position>
+            <Phone>0908001004</Phone>
+            <Email>linh.pham@hotel.com</Email>
+            <Salary>8000000</Salary>
+        </Staff>
+        <Staff>
+            <StaffID>5</StaffID>
+            <FullName>Hoàng Anh Tuấn</FullName>
+            <Position>Nhân viên kỹ thuật</Position>
+            <Phone>0908001005</Phone>
+            <Email>tuan.hoang@hotel.com</Email>
+            <Salary>10000000</Salary>
+        </Staff>
+        <Staff>
+            <StaffID>6</StaffID>
+            <FullName>Đặng Thị Phương</FullName>
+            <Position>Kế toán</Position>
+            <Phone>0908001006</Phone>
+            <Email>phuong.dang@hotel.com</Email>
+            <Salary>15000000</Salary>
+        </Staff>
+        <Staff>
+            <StaffID>7</StaffID>
+            <FullName>Vũ Quốc Cường</FullName>
+            <Position>Bảo trì</Position>
+            <Phone>0908001007</Phone>
+            <Email>cuong.vu@hotel.com</Email>
+            <Salary>9500000</Salary>
+        </Staff>
+    </Staffs>
+
+    <!-- ===================== ROOM TYPE ===================== -->
+    <RoomTypes>
+        <RoomType>
+            <RoomTypeID>1</RoomTypeID>
+            <TypeName>Standard</TypeName>
+            <Description>Phòng tiêu chuẩn 1 giường đôi</Description>
+            <Capacity>2</Capacity>
+            <BasePrice>500000</BasePrice>
+        </RoomType>
+        <RoomType>
+            <RoomTypeID>2</RoomTypeID>
+            <TypeName>Deluxe</TypeName>
+            <Description>Phòng có ban công và minibar</Description>
+            <Capacity>3</Capacity>
+            <BasePrice>800000</BasePrice>
+        </RoomType>
+        <RoomType>
+            <RoomTypeID>3</RoomTypeID>
+            <TypeName>Suite</TypeName>
+            <Description>Phòng hạng sang với phòng khách riêng</Description>
+            <Capacity>4</Capacity>
+            <BasePrice>1500000</BasePrice>
+        </RoomType>
+        <RoomType>
+            <RoomTypeID>4</RoomTypeID>
+            <TypeName>Family</TypeName>
+            <Description>Phòng 2 giường lớn cho gia đình</Description>
+            <Capacity>5</Capacity>
+            <BasePrice>1200000</BasePrice>
+        </RoomType>
+        <RoomType>
+            <RoomTypeID>5</RoomTypeID>
+            <TypeName>Superior</TypeName>
+            <Description>Phòng cao cấp hướng biển</Description>
+            <Capacity>3</Capacity>
+            <BasePrice>1000000</BasePrice>
+        </RoomType>
+        <RoomType>
+            <RoomTypeID>6</RoomTypeID>
+            <TypeName>Single</TypeName>
+            <Description>Phòng đơn giá rẻ</Description>
+            <Capacity>1</Capacity>
+            <BasePrice>350000</BasePrice>
+        </RoomType>
+        <RoomType>
+            <RoomTypeID>7</RoomTypeID>
+            <TypeName>Executive</TypeName>
+            <Description>Phòng cao cấp cho khách doanh nhân</Description>
+            <Capacity>2</Capacity>
+            <BasePrice>1800000</BasePrice>
+        </RoomType>
+    </RoomTypes>
+
+    <!-- ===================== ROOM ===================== -->
+    <Rooms>
+        <Room><RoomID>1</RoomID><RoomNumber>101</RoomNumber><RoomTypeID>1</RoomTypeID><Floor>1</Floor><Status>Available</Status></Room>
+        <Room><RoomID>2</RoomID><RoomNumber>102</RoomNumber><RoomTypeID>1</RoomTypeID><Floor>1</Floor><Status>Occupied</Status></Room>
+        <Room><RoomID>3</RoomID><RoomNumber>201</RoomNumber><RoomTypeID>2</RoomTypeID><Floor>2</Floor><Status>Available</Status></Room>
+        <Room><RoomID>4</RoomID><RoomNumber>202</RoomNumber><RoomTypeID>2</RoomTypeID><Floor>2</Floor><Status>Maintenance</Status></Room>
+        <Room><RoomID>5</RoomID><RoomNumber>301</RoomNumber><RoomTypeID>3</RoomTypeID><Floor>3</Floor><Status>Available</Status></Room>
+        <Room><RoomID>6</RoomID><RoomNumber>401</RoomNumber><RoomTypeID>4</RoomTypeID><Floor>4</Floor><Status>Cleaning</Status></Room>
+        <Room><RoomID>7</RoomID><RoomNumber>501</RoomNumber><RoomTypeID>5</RoomTypeID><Floor>5</Floor><Status>Available</Status></Room>
+    </Rooms>
+
+    <!-- ===================== PROMOTION ===================== -->
+    <Promotions>
+        <Promotion><PromotionID>1</PromotionID><Code>SUMMER10</Code><Description>Giảm 10% mùa hè</Description><DiscountType>Percent</DiscountType><DiscountValue>10</DiscountValue><StartDate>2025-06-01</StartDate><EndDate>2025-08-31</EndDate><Status>Active</Status></Promotion>
+        <Promotion><PromotionID>2</PromotionID><Code>NEWYEAR20</Code><Description>Giảm 20% dịp Tết</Description><DiscountType>Percent</DiscountType><DiscountValue>20</DiscountValue><StartDate>2025-01-01</StartDate><EndDate>2025-02-01</EndDate><Status>Inactive</Status></Promotion>
+        <Promotion><PromotionID>3</PromotionID><Code>WEEKEND</Code><Description>Giảm 100k cuối tuần</Description><DiscountType>Amount</DiscountType><DiscountValue>100000</DiscountValue><StartDate>2025-09-01</StartDate><EndDate>2025-12-31</EndDate><Status>Active</Status></Promotion>
+        <Promotion><PromotionID>4</PromotionID><Code>VIP5</Code><Description>Giảm 5% cho khách VIP</Description><DiscountType>Percent</DiscountType><DiscountValue>5</DiscountValue><StartDate>2025-01-01</StartDate><EndDate>2025-12-31</EndDate><Status>Active</Status></Promotion>
+        <Promotion><PromotionID>5</PromotionID><Code>HOLIDAY15</Code><Description>Giảm 15% mùa lễ hội</Description><DiscountType>Percent</DiscountType><DiscountValue>15</DiscountValue><StartDate>2025-12-20</StartDate><EndDate>2026-01-05</EndDate><Status>Upcoming</Status></Promotion>
+        <Promotion><PromotionID>6</PromotionID><Code>WEDLOVE</Code><Description>Giảm 200k cho cặp đôi</Description><DiscountType>Amount</DiscountType><DiscountValue>200000</DiscountValue><StartDate>2025-07-01</StartDate><EndDate>2025-09-01</EndDate><Status>Active</Status></Promotion>
+        <Promotion><PromotionID>7</PromotionID><Code>LONGSTAY</Code><Description>Giảm 10% cho khách ở hơn 5 đêm</Description><DiscountType>Percent</DiscountType><DiscountValue>10</DiscountValue><StartDate>2025-05-01</StartDate><EndDate>2025-12-31</EndDate><Status>Active</Status></Promotion>
+    </Promotions>
+
+    <!-- ===================== BOOKING ===================== -->
+    <Bookings>
+        <Booking><BookingID>1</BookingID><CustomerID>1</CustomerID><StaffID>2</StaffID><BookingDate>2025-09-10T10:00:00</BookingDate><CheckInDate>2025-09-12T14:00:00</CheckInDate><CheckOutDate>2025-09-14T12:00:00</CheckOutDate><Status>Confirmed</Status><EstimatedAmount>1000000</EstimatedAmount></Booking>
+        <Booking><BookingID>2</BookingID><CustomerID>2</CustomerID><StaffID>2</StaffID><BookingDate>2025-09-11T11:00:00</BookingDate><CheckInDate>2025-09-15T14:00:00</CheckInDate><CheckOutDate>2025-09-18T12:00:00</CheckOutDate><Status>Pending</Status><EstimatedAmount>2400000</EstimatedAmount></Booking>
+        <Booking><BookingID>3</BookingID><CustomerID>3</CustomerID><StaffID>1</StaffID><BookingDate>2025-09-09T08:30:00</BookingDate><CheckInDate>2025-09-10T14:00:00</CheckInDate><CheckOutDate>2025-09-13T12:00:00</CheckOutDate><Status>Completed</Status><EstimatedAmount>1500000</EstimatedAmount></Booking>
+        <Booking><BookingID>4</BookingID><CustomerID>4</CustomerID><StaffID>2</StaffID><BookingDate>2025-09-13T13:00:00</BookingDate><CheckInDate>2025-09-20T14:00:00</CheckInDate><CheckOutDate>2025-09-22T12:00:00</CheckOutDate><Status>Confirmed</Status><EstimatedAmount>1600000</EstimatedAmount></Booking>
+        <Booking><BookingID>5</BookingID><CustomerID>5</CustomerID><StaffID>3</StaffID><BookingDate>2025-09-15T09:45:00</BookingDate><CheckInDate>2025-09-16T14:00:00</CheckInDate><CheckOutDate>2025-09-19T12:00:00</CheckOutDate><Status>Confirmed</Status><EstimatedAmount>1800000</EstimatedAmount></Booking>
+        <Booking><BookingID>6</BookingID><CustomerID>6</CustomerID><StaffID>2</StaffID><BookingDate>2025-09-17T15:00:00</BookingDate><CheckInDate>2025-09-19T14:00:00</CheckInDate><CheckOutDate>2025-09-21T12:00:00</CheckOutDate><Status>Completed</Status><EstimatedAmount>1200000</EstimatedAmount></Booking>
+        <Booking><BookingID>7</BookingID><CustomerID>7</CustomerID><StaffID>1</StaffID><BookingDate>2025-09-18T16:00:00</BookingDate><CheckInDate>2025-09-20T14:00:00</CheckInDate><CheckOutDate>2025-09-25T12:00:00</CheckOutDate><Status>Pending</Status><EstimatedAmount>2500000</EstimatedAmount></Booking>
+    </Bookings>
+
+    <!-- ===================== BOOKING DETAIL ===================== -->
+    <BookingDetails>
+        <BookingDetail><BookingDetailID>1</BookingDetailID><BookingID>1</BookingID><RoomID>1</RoomID><Price>500000</Price><Quantity>1</Quantity><Nights>2</Nights></BookingDetail>
+        <BookingDetail><BookingDetailID>2</BookingDetailID><BookingID>2</BookingID><RoomID>3</RoomID><Price>800000</Price><Quantity>1</Quantity><Nights>3</Nights></BookingDetail>
+        <BookingDetail><BookingDetailID>3</BookingDetailID><BookingID>3</BookingID><RoomID>5</RoomID><Price>1500000</Price><Quantity>1</Quantity><Nights>3</Nights></BookingDetail>
+        <BookingDetail><BookingDetailID>4</BookingDetailID><BookingID>4</BookingID><RoomID>7</RoomID><Price>1000000</Price><Quantity>1</Quantity><Nights>2</Nights></BookingDetail>
+        <BookingDetail><BookingDetailID>5</BookingDetailID><BookingID>5</BookingID><RoomID>2</RoomID><Price>500000</Price><Quantity>1</Quantity><Nights>3</Nights></BookingDetail>
+        <BookingDetail><BookingDetailID>6</BookingDetailID><BookingID>6</BookingID><RoomID>6</RoomID><Price>1200000</Price><Quantity>1</Quantity><Nights>2</Nights></BookingDetail>
+        <BookingDetail><BookingDetailID>7</BookingDetailID><BookingID>7</BookingID><RoomID>4</RoomID><Price>800000</Price><Quantity>1</Quantity><Nights>5</Nights></BookingDetail>
+    </BookingDetails>
+
+    <!-- ===================== BOOKING PROMOTION ===================== -->
+    <BookingPromotions>
+        <BookingPromotion><BookingPromotionID>1</BookingPromotionID><BookingID>1</BookingID><PromotionID>1</PromotionID><AppliedDate>2025-09-10T10:10:00</AppliedDate><DiscountAmount>100000</DiscountAmount></BookingPromotion>
+        <BookingPromotion><BookingPromotionID>2</BookingPromotionID><BookingID>2</BookingID><PromotionID>3</PromotionID><AppliedDate>2025-09-11T11:15:00</AppliedDate><DiscountAmount>100000</DiscountAmount></BookingPromotion>
+        <BookingPromotion><BookingPromotionID>3</BookingPromotionID><BookingID>3</BookingID><PromotionID>4</PromotionID><AppliedDate>2025-09-09T08:40:00</AppliedDate><DiscountAmount>75000</DiscountAmount></BookingPromotion>
+        <BookingPromotion><BookingPromotionID>4</BookingPromotionID><BookingID>4</BookingID><PromotionID>6</PromotionID><AppliedDate>2025-09-13T13:05:00</AppliedDate><DiscountAmount>200000</DiscountAmount></BookingPromotion>
+        <BookingPromotion><BookingPromotionID>5</BookingPromotionID><BookingID>5</BookingID><PromotionID>7</PromotionID><AppliedDate>2025-09-15T09:50:00</AppliedDate><DiscountAmount>180000</DiscountAmount></BookingPromotion>
+        <BookingPromotion><BookingPromotionID>6</BookingPromotionID><BookingID>6</BookingID><PromotionID>1</PromotionID><AppliedDate>2025-09-17T15:05:00</AppliedDate><DiscountAmount>120000</DiscountAmount></BookingPromotion>
+        <BookingPromotion><BookingPromotionID>7</BookingPromotionID><BookingID>7</BookingID><PromotionID>5</PromotionID><AppliedDate>2025-09-18T16:10:00</AppliedDate><DiscountAmount>375000</DiscountAmount></BookingPromotion>
+    </BookingPromotions>
+
+    <!-- ===================== INVOICE ===================== -->
+    <Invoices>
+        <Invoice><InvoiceID>1</InvoiceID><BookingID>1</BookingID><IssueDate>2025-09-14T13:00:00</IssueDate><Amount>900000</Amount><Method>Credit Card</Method><Status>Paid</Status></Invoice>
+        <Invoice><InvoiceID>2</InvoiceID><BookingID>2</BookingID><IssueDate>2025-09-18T13:00:00</IssueDate><Amount>2300000</Amount><Method>Cash</Method><Status>Pending</Status></Invoice>
+        <Invoice><InvoiceID>3</InvoiceID><BookingID>3</BookingID><IssueDate>2025-09-13T13:00:00</IssueDate><Amount>1425000</Amount><Method>Credit Card</Method><Status>Paid</Status></Invoice>
+        <Invoice><InvoiceID>4</InvoiceID><BookingID>4</BookingID><IssueDate>2025-09-22T13:00:00</IssueDate><Amount>1400000</Amount><Method>Cash</Method><Status>Paid</Status></Invoice>
+        <Invoice><InvoiceID>5</InvoiceID><BookingID>5</BookingID><IssueDate>2025-09-19T13:00:00</IssueDate><Amount>1620000</Amount><Method>Credit Card</Method><Status>Paid</Status></Invoice>
+        <Invoice><InvoiceID>6</InvoiceID><BookingID>6</BookingID><IssueDate>2025-09-21T13:00:00</IssueDate><Amount>1080000</Amount><Method>Cash</Method><Status>Paid</Status></Invoice>
+        <Invoice><InvoiceID>7</InvoiceID><BookingID>7</BookingID><IssueDate>2025-09-25T13:00:00</IssueDate><Amount>2125000</Amount><Method>Credit Card</Method><Status>Pending</Status></Invoice>
+    </Invoices>
+
+</HotelManagement>

@@ -1,0 +1,78 @@
+    <!ELEMENT HotelManagement (Customers, Staffs, RoomTypes, Rooms, Promotions, Bookings, BookingDetails, BookingPromotions, Invoices)>
+
+    <!-- ===================== CUSTOMER ===================== -->
+    <!ELEMENT Customers (Customer+)>
+    <!ELEMENT Customer (CustomerID, FullName, Phone, Email, Address, Nationality, PassportNumber)>
+    <!ELEMENT CustomerID (#PCDATA)>
+    <!ELEMENT FullName (#PCDATA)>
+    <!ELEMENT Phone (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Address (#PCDATA)>
+    <!ELEMENT Nationality (#PCDATA)>
+    <!ELEMENT PassportNumber (#PCDATA)>
+
+    <!-- ===================== STAFF ===================== -->
+    <!ELEMENT Staffs (Staff+)>
+    <!ELEMENT Staff (StaffID, FullName, Position, Phone, Email, Salary)>
+    <!ELEMENT StaffID (#PCDATA)>
+    <!ELEMENT Position (#PCDATA)>
+    <!ELEMENT Salary (#PCDATA)>
+
+    <!-- ===================== ROOM TYPE ===================== -->
+    <!ELEMENT RoomTypes (RoomType+)>
+    <!ELEMENT RoomType (RoomTypeID, TypeName, Description, Capacity, BasePrice)>
+    <!ELEMENT RoomTypeID (#PCDATA)>
+    <!ELEMENT TypeName (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Capacity (#PCDATA)>
+    <!ELEMENT BasePrice (#PCDATA)>
+
+    <!-- ===================== ROOM ===================== -->
+    <!ELEMENT Rooms (Room+)>
+    <!ELEMENT Room (RoomID, RoomNumber, RoomTypeID, Floor, Status)>
+    <!ELEMENT RoomID (#PCDATA)>
+    <!ELEMENT RoomNumber (#PCDATA)>
+    <!ELEMENT Floor (#PCDATA)>
+    <!ELEMENT Status (#PCDATA)>
+
+    <!-- ===================== PROMOTION ===================== -->
+    <!ELEMENT Promotions (Promotion+)>
+    <!ELEMENT Promotion (PromotionID, Code, Description, DiscountType, DiscountValue, StartDate, EndDate, Status)>
+    <!ELEMENT PromotionID (#PCDATA)>
+    <!ELEMENT Code (#PCDATA)>
+    <!ELEMENT DiscountType (#PCDATA)>
+    <!ELEMENT DiscountValue (#PCDATA)>
+    <!ELEMENT StartDate (#PCDATA)>
+    <!ELEMENT EndDate (#PCDATA)>
+
+    <!-- ===================== BOOKING ===================== -->
+    <!ELEMENT Bookings (Booking+)>
+    <!ELEMENT Booking (BookingID, CustomerID, StaffID, BookingDate, CheckInDate, CheckOutDate, Status, EstimatedAmount)>
+    <!ELEMENT BookingID (#PCDATA)>
+    <!ELEMENT BookingDate (#PCDATA)>
+    <!ELEMENT CheckInDate (#PCDATA)>
+    <!ELEMENT CheckOutDate (#PCDATA)>
+    <!ELEMENT EstimatedAmount (#PCDATA)>
+
+    <!-- ===================== BOOKING DETAIL ===================== -->
+    <!ELEMENT BookingDetails (BookingDetail+)>
+    <!ELEMENT BookingDetail (BookingDetailID, BookingID, RoomID, Price, Quantity, Nights)>
+    <!ELEMENT BookingDetailID (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Quantity (#PCDATA)>
+    <!ELEMENT Nights (#PCDATA)>
+
+    <!-- ===================== BOOKING PROMOTION ===================== -->
+    <!ELEMENT BookingPromotions (BookingPromotion+)>
+    <!ELEMENT BookingPromotion (BookingPromotionID, BookingID, PromotionID, AppliedDate, DiscountAmount)>
+    <!ELEMENT BookingPromotionID (#PCDATA)>
+    <!ELEMENT AppliedDate (#PCDATA)>
+    <!ELEMENT DiscountAmount (#PCDATA)>
+
+    <!-- ===================== INVOICE ===================== -->
+    <!ELEMENT Invoices (Invoice+)>
+    <!ELEMENT Invoice (InvoiceID, BookingID, IssueDate, Amount, Method, Status)>
+    <!ELEMENT InvoiceID (#PCDATA)>
+    <!ELEMENT IssueDate (#PCDATA)>
+    <!ELEMENT Amount (#PCDATA)>
+    <!ELEMENT Method (#PCDATA)>

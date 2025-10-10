@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- ================= ROOT ================= -->
+    <xs:element name="HotelManagement">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Customers"/>
+                <xs:element ref="Staffs"/>
+                <xs:element ref="RoomTypes"/>
+                <xs:element ref="Rooms"/>
+                <xs:element ref="Bookings"/>
+                <xs:element ref="BookingDetails"/>
+                <xs:element ref="Promotions"/>
+                <xs:element ref="BookingPromotions"/>
+                <xs:element ref="Invoices"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= CUSTOMERS ================= -->
+    <xs:element name="Customers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Customer" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CustomerID" type="xs:integer"/>
+                            <xs:element name="FullName" type="xs:string"/>
+                            <xs:element name="Phone" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string"/>
+                            <xs:element name="Address" type="xs:string"/>
+                            <xs:element name="Nationality" type="xs:string"/>
+                            <xs:element name="PassportNumber" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= STAFFS ================= -->
+    <xs:element name="Staffs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Staff" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="StaffID" type="xs:integer"/>
+                            <xs:element name="FullName" type="xs:string"/>
+                            <xs:element name="Position" type="xs:string"/>
+                            <xs:element name="Phone" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string"/>
+                            <xs:element name="Salary" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= ROOM TYPES ================= -->
+    <xs:element name="RoomTypes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="RoomType" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RoomTypeID" type="xs:integer"/>
+                            <xs:element name="TypeName" type="xs:string"/>
+                            <xs:element name="Description" type="xs:string"/>
+                            <xs:element name="Capacity" type="xs:integer"/>
+                            <xs:element name="BasePrice" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= ROOMS ================= -->
+    <xs:element name="Rooms">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Room" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RoomID" type="xs:integer"/>
+                            <xs:element name="RoomNumber" type="xs:string"/>
+                            <xs:element name="RoomTypeID" type="xs:integer"/>
+                            <xs:element name="Floor" type="xs:integer"/>
+                            <xs:element name="Status" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= BOOKINGS ================= -->
+    <xs:element name="Bookings">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Booking" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="BookingID" type="xs:integer"/>
+                            <xs:element name="CustomerID" type="xs:integer"/>
+                            <xs:element name="StaffID" type="xs:integer"/>
+                            <xs:element name="BookingDate" type="xs:dateTime"/>
+                            <xs:element name="CheckInDate" type="xs:dateTime"/>
+                            <xs:element name="CheckOutDate" type="xs:dateTime"/>
+                            <xs:element name="Status" type="xs:string"/>
+                            <xs:element name="EstimatedAmount" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= BOOKING DETAILS ================= -->
+    <xs:element name="BookingDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BookingDetail" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="BookingDetailID" type="xs:integer"/>
+                            <xs:element name="BookingID" type="xs:integer"/>
+                            <xs:element name="RoomID" type="xs:integer"/>
+                            <xs:element name="Price" type="xs:decimal"/>
+                            <xs:element name="Quantity" type="xs:integer"/>
+                            <xs:element name="Nights" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= PROMOTIONS ================= -->
+    <xs:element name="Promotions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Promotion" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PromotionID" type="xs:integer"/>
+                            <xs:element name="Code" type="xs:string"/>
+                            <xs:element name="Description" type="xs:string"/>
+                            <xs:element name="DiscountType" type="xs:string"/>
+                            <xs:element name="DiscountValue" type="xs:decimal"/>
+                            <xs:element name="StartDate" type="xs:date"/>
+                            <xs:element name="EndDate" type="xs:date"/>
+                            <xs:element name="Status" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= BOOKING PROMOTIONS ================= -->
+    <xs:element name="BookingPromotions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BookingPromotion" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="BookingPromotionID" type="xs:integer"/>
+                            <xs:element name="BookingID" type="xs:integer"/>
+                            <xs:element name="PromotionID" type="xs:integer"/>
+                            <xs:element name="AppliedDate" type="xs:dateTime"/>
+                            <xs:element name="DiscountAmount" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ================= INVOICES ================= -->
+    <xs:element name="Invoices">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Invoice" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="InvoiceID" type="xs:integer"/>
+                            <xs:element name="BookingID" type="xs:integer"/>
+                            <xs:element name="IssueDate" type="xs:dateTime"/>
+                            <xs:element name="Amount" type="xs:decimal"/>
+                            <xs:element name="Method" type="xs:string"/>
+                            <xs:element name="Status" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
